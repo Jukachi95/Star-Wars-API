@@ -21,10 +21,10 @@ function getFacts(){
 
             const response = JSON.parse(this.responseText);
 
-            let self = this;
 
             fact.style.display = 'block';
 
+            // homeworld link
             
                 
 
@@ -32,9 +32,11 @@ function getFacts(){
 
                         output+=`
                         <li>Name: ${response.name}</li> 
-                        <li>Height: ${response.height}cm</li>
-                        <li>Weight: ${response.mass}kg</li>
+                        <li>Height: ${response.height} cm</li>
+                        <li>Weight: ${response.mass} kg</li>
                         <li> Gender: ${response.gender}</li>
+                        <li>Hair Colour: ${response.hair_color}</li>
+                        <li>Eye Colour: ${response.eye_color}</li>
                         
                          `
                     
